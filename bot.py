@@ -1,8 +1,9 @@
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from keep_alive import keep_alive
 
-BOT_TOKEN = "7847908607:AAFq5-mvHEytFaMOcz38QRn89-yyAaayloA"
+BOT_TOKEN = os.getenv("7847908607:AAFq5-mvHEytFaMOcz38QRn89-yyAaayloA")  # uses env variable
 
 keep_alive()
 

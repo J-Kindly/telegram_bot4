@@ -15,3 +15,5 @@ if __name__ == '__main__':
     app.add_handler(CommandHandler("start", start))
     print("✅ Bot is running...")
     app.run_polling()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+print("Loaded BOT_TOKEN:", BOT_TOKEN)  # Add this line temporarily
